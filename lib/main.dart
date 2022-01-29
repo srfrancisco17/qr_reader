@@ -1,3 +1,6 @@
+// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 import 'package:qr_reader/pages/home_page.dart';
 import 'package:qr_reader/pages/mapa_page.dart';
@@ -15,6 +18,12 @@ class MyApp extends StatelessWidget {
         'home': (_) => HomePageScreen(),
         'mapa': (_) => MapaPageScreen(),
       },
+      theme: ThemeData(
+        primaryColor: Colors.deepPurple,
+        floatingActionButtonTheme: FloatingActionButtonThemeData(
+          backgroundColor: Colors.deepPurple
+        ),
+      ),
     );
   }
 }
